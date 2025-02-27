@@ -1,0 +1,660 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('Imagenes/logo.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.9;
+}
+
+header {
+    background: #004080;
+    color: white;
+    padding: 20px 25px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+.logo-img {
+    width: 70px; 
+    height: auto;
+}
+
+.logo-text {
+    font-size: 28px; 
+    font-weight: bold;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #FFD700; 
+}
+
+
+.banner {
+    width: 100%;
+    height: 400px; 
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner-texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 15px 20px;
+    border-radius: 8px;
+    z-index: 2;
+}
+
+.banner-carrusel {
+    width: 100%;
+    height: 100%; 
+    position: relative;
+}
+
+.banner-carrusel img {
+    width: 100%;
+    height: 500px; 
+    object-fit: cover;
+    display: block;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.slick-dots li {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.slick-dots li button {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.slick-dots li.slick-active {
+    background-color: #004080;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.card p {
+    text-align: justify;
+}
+.por-que-elegir {
+    background: url('Imagenes/fondo-colegio.jpg') no-repeat center center;
+    background-size: contain; /* Muestra la imagen completa sin estirarla */
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #b3d9f4; /* Un color de fondo similar para evitar cortes */
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.por-que-elegir h2 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.benefits-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.benefit {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 280px;
+}
+
+.benefit img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.benefit p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #004080;
+}
+
+.mision-vision {
+    padding: 40px 20px; 
+    background: #e0e0e0;
+    color: #004080;
+    border-top: 4px solid #004080;
+    border-bottom: 4px solid #004080;
+    text-align: center;
+}
+
+.mision-vision h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.contenedor-mision-vision {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cuadro {
+    flex: 1;
+    min-width: 300px;
+    max-width: 45%;
+    box-sizing: border-box;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.mision h3, .vision h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.mision p, .vision p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+footer {
+    background: #004080;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-right a img {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-right a img:hover {
+    transform: scale(1.1);
+}
+
+.nosotros {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.nosotros h1 {
+    font-family: 'Oswald', sans-serif;
+    color: #004080;
+    font-size: 42px; /* Incrementa el tamaño del título */
+    margin-bottom: 20px;
+}
+
+.nosotros h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #004080;
+    font-size: 32px; /* Incrementa el tamaño del subtítulo */
+    margin-bottom: 15px;
+}
+
+.nosotros p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: justify;
+}
+
+.nosotros-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nosotros-info img {
+    width: 50%;
+    border-radius: 5px;
+}
+
+.nosotros-info p, .nosotros-info ul {
+    width: 50%;
+    padding: 20px;
+    text-align: justify;
+}
+
+.lista-sin-puntos {
+    list-style: none;
+    padding: 0;
+    text-align: justify;
+}
+
+footer {
+    background: #004080;
+    color: white;
+    padding: 10px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-right a img {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-right a img:hover {
+    transform: scale(1.1);
+}
+
+.niveles {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.niveles h1 {
+    font-family: 'Oswald', sans-serif;
+    color: #004080;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Contenedor general para ambos niveles */
+.niveles-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Asegurar que los niveles tengan la misma altura */
+.nivel {
+    width: 80%;
+    max-width: 1000px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden; /* Evita que el contenido se salga del recuadro */
+    min-height: 650px; /* Asegura que todos los recuadros tengan la misma altura */
+}
+
+/* Asegurar que la descripción quede dentro del recuadro */
+.nivel > p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 15px auto;
+    max-width: 85%;
+    padding: 0 20px; /* Agregar padding para evitar que toque los bordes */
+}
+
+/* Contenedor de las imágenes y sus textos */
+.nivel-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 25px;
+    gap: 15px;
+    width: 100%;
+}
+
+/* Asegurar que las imágenes no se salgan del recuadro */
+.nivel-info img {
+    width: 90%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover; /* Asegurar que las imágenes tengan el mismo tamaño */
+}
+
+/* Asegurar que los textos debajo de las imágenes estén centrados */
+.nivel-info p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 10px auto;
+    max-width: 80%;
+}
+
+/* Resaltar los textos en negrita dentro de cada nivel */
+.nivel-info p strong {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Estilo para los enlaces */
+.card-link {
+    text-decoration: none;
+    color: #004080; 
+    font-weight: bold; 
+    display: block; 
+    margin-top: 10px; 
+    text-align: center; 
+}
+
+.nivel-info ul {
+    text-align: justify; /* Justifica el texto dentro de la lista */
+    list-style: none; /* Elimina los puntos de la lista */
+    padding-left: 0; /* Elimina el padding por defecto */
+}
+
+.nivel-info ul li {
+    display: flex; /* Asegura que el ícono y el texto estén alineados */
+    align-items: center; /* Centra verticalmente el ícono con el texto */
+    gap: 8px; /* Espaciado entre el ícono y el texto */
+    text-align: justify; /* Asegura que el texto dentro del `li` esté justificado */
+    font-size: 18px; /* Tamaño de fuente adecuado */
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+.nivel-info ul li img {
+    width: 20px; /* Tamaño del ícono */
+    height: 20px;
+}
+
+.card-link:hover {
+    color: #002050;
+}
+
+/* Diseño uniforme para el pie de página */
+footer {
+    background: #004080;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* Contenedor del pie de página */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Iconos de redes sociales en el pie de página */
+.footer-right a img {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-right a img:hover {
+    transform: scale(1.1);
+}
+
+.admision {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.admision h1 {
+    font-family: 'Oswald', sans-serif;
+    color: #004080;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.admision p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: justify; 
+}
+
+.admision .centrado {
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 15px;
+    background-color: #004080;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #002050;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header, footer {
+    background: #004080;
+    color: white;
+    padding: 15px 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+    margin-top: auto; /* Asegura que el pie de página esté en la parte inferior */
+}
+
+.informacion {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    flex: 1;
+}
+
+.informacion h1 {
+    font-family: 'Oswald', sans-serif;
+    color: #004080;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.info-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+}
+
+.info-card h2 {
+    font-size: 20px;
+    color: #004080;
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
+
+.info-card a {
+    text-decoration: none;
+    color: #004080;
+    font-weight: bold;
+}
+
+.info-card a:hover {
+    color: #002050;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-right a img {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-right a img:hover {
+    transform: scale(1.1);
+}
